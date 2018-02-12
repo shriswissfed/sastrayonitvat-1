@@ -1,10 +1,19 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { ExtraOptions , Routes, RouterModule } from '@angular/router';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path: '',
+    loadChildren: './modules/landing/landing.module#LandingModule',
+  }
+];
+
+const options: ExtraOptions = {
+  useHash: false
+};
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, options)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

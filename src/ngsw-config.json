@@ -14,7 +14,17 @@
         "/*.chunk.js"
       ]
     }
-  }, {
+  },
+  {
+    "name": "fonts",
+    "resources": {
+      "urls": [
+        "https://fonts.googleapis.com/**",
+        "https://fonts.gstatic.com/**"
+      ]
+    }
+  },
+  {
     "name": "assets",
     "installMode": "lazy",
     "updateMode": "prefetch",
@@ -23,5 +33,30 @@
         "/assets/**"
       ]
     }
-  }]
+  }],
+  "dataGroups": [
+    {
+      "name": "api-freshness",
+      "urls": [
+        "/timeline"
+      ],
+      "cacheConfig": {
+        "strategy": "freshness",
+        "maxSize": 100,
+        "maxAge": "3d",
+        "timeout": "10s"
+      }
+    },
+    {
+      "name": "api-performance",
+      "urls": [
+        "/favorites"
+      ],
+      "cacheConfig": {
+        "strategy": "performance",
+        "maxSize": 100,
+        "maxAge": "3d"
+      }
+    }
+  ]
 }
