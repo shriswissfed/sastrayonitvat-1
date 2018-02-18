@@ -3,11 +3,11 @@ import { MediaMatcher } from '@angular/cdk/layout';
 import { OverlayContainer } from '@angular/cdk/overlay';
 
 @Component({
-  selector: 'sastrayonitvat-landing',
-  templateUrl: './landing.component.html',
-  styleUrls: ['./landing.component.scss']
+  selector: 'sastrayonitvat-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.scss']
 })
-export class LandingComponent implements OnDestroy , OnInit {
+export class HomeComponent implements OnInit , OnDestroy {
   themeClass: any;
   mobileQuery: MediaQueryList;
 

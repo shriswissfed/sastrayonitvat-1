@@ -1,1 +1,11 @@
 <router-outlet></router-outlet>
+
+<h1 translate>Title</h1>
+
+<div>
+  {{ 'Intro' | translate:user }}
+</div>
+
+<button (click)="switchLanguage('en-US')">EN</button>
+
+<button (click)="switchLanguage('ta-IN')">TA</button>
