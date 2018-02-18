@@ -1,23 +1,29 @@
 language: node_js
 
 node_js:
-  - '9.1.0'
+  - node
 
 branches:
   only:
   - master
 
-install:
+before_script:
   - yarn global add firebase-tools
+  - yarn global add @angular/cli
 
 script:
   - echo "Instantiating Tests..."
-  - yarn build
   - yarn lint
+  - yarn build
   - echo "Launching Deploy to Firebase( sastrayonitvat-dev.firebaseapp.com ) now..."
 
 after_success:
-  - firebase deploy --token $FIREBASE_TOKEN --non-interactive
+  - test $TRAVIS_BRANCH = "master" && test $TRAVIS_PULL_REQUEST = "false" && firebase deploy --token $FIREBASE_TOKEN --non-interactive
+
+notifications:
+  email:
+    on_failure: change
+    on_success: change
 
 cache:
   yarn: true
