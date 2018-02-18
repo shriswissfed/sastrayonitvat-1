@@ -1,0 +1,25 @@
+language: node_js
+
+node_js:
+  - '9.1.0'
+
+branches:
+  only:
+  - master
+
+install:
+  - yarn global add firebase-tools
+
+script:
+  - echo "Instantiating Tests..."
+  - yarn build
+  - yarn lint
+  - echo "Launching Deploy to Firebase( sastrayonitvat-dev.firebaseapp.com ) now..."
+
+after_success:
+  - firebase deploy --token $FIREBASE_TOKEN --non-interactive
+
+cache:
+  yarn: true
+  directories:
+    - node_modules

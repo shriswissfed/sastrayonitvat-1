@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "start": "ng serve --host 0.0.0.0 --disable-host-check",
-    "build": "ng serve --prod",
+    "build": "ng build --prod",
     "lint": "ng lint",
     "hmr": "ng serve --host 0.0.0.0 --disable-host-check --hmr -e=hmr",
     "ngsw-config": "node_modules/.bin/ngsw-config dist src/ngsw-config.json",

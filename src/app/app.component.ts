@@ -7,8 +7,9 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class AppComponent {
   title = 'sastrayonitvat';
-  constructor(private translate: TranslateService){
-    translate.setDefaultLang('en');
+  user = 'sastrayonitvat';
+  constructor(private translate: TranslateService) {
+    translate.setDefaultLang('ta-IN');
   }
 
   switchLanguage(language: string) {

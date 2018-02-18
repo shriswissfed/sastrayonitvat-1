@@ -34,7 +34,7 @@ Include rxjs extensions in polyfills , to use it across the app without importin
 
 
 <p align="center">
-  <a href="https://vedhabase.firebaseapp.com/">
+  <a href="https://sastrayonitvat-dev.firebaseapp.com">
     <img alt="OM" src="public/om.png" width="546">
   </a>
 </p>
@@ -53,9 +53,7 @@ http://sssbpt.org/sri-rudram/instructions-to-user.htm
 
 http://compendia.samskrutam.com/MainPage.ashx
 
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
-
-You can find a example of this project in this [DEMO](https://www.vedhabase.firebaseapp.com/).
+You can find a example of this project in this [DEMO](https://sastrayonitvat-dev.firebaseapp.com/).
 
 ### Simple run
 
@@ -187,7 +185,7 @@ Om (Auṃ or Oṃ, Sanskrit: ॐ) is a sacred sound and a spiritual icon in Hind
 
 MIT
 
-[logo-image]: public/om.png
+[logo-image]: assets/images/icons/icon-512x512.png
 [logo-url]: https://github.com/arangates/sastrayonitvat/blob/master/README.md
 [travis-image]: https://travis-ci.org/arangates/sastrayonitvat.svg?branch=master
 [travis-url]: https://travis-ci.org/arangates/sastrayonitvat
