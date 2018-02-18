@@ -36,6 +36,7 @@ import { AngularFireModule } from 'angularfire2';
 // Ngx Translate
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { SharedModule } from './shared/shared.module';
 @NgModule({
   imports: [
     BrowserModule,
@@ -48,6 +49,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
       }
     }),
     BrowserAnimationsModule,
+    SharedModule,
     FlexLayoutModule,
     AppRoutingModule,
     FormsModule,
