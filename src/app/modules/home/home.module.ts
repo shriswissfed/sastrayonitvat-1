@@ -4,27 +4,13 @@ import { CommonModule } from '@angular/common';
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 
-import { OverlayModule } from '@angular/cdk/overlay';
-import { LayoutModule } from '@angular/cdk/layout';
 
-import {
-  MatSidenavModule,
-  MatIconModule,
-  MatToolbarModule,
-  MatListModule,
-  MatButtonModule
-} from '@angular/material';
+import { SharedModule } from '../../shared/shared.module';
 @NgModule({
   imports: [
     CommonModule,
     HomeRoutingModule,
-    LayoutModule,
-    OverlayModule,
-    MatSidenavModule,
-    MatIconModule,
-    MatToolbarModule,
-    MatListModule,
-    MatButtonModule,
+    SharedModule,
   ],
   declarations: [HomeComponent]
 })
