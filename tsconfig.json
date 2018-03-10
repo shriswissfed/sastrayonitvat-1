@@ -14,6 +14,16 @@
     "lib": [
       "es2017",
       "dom"
-    ]
+    ],
+    "baseUrl": "./src",
+    "paths": {
+      "@sastrayonitvat/modules/*": ["app/modules/*"],
+      "@sastrayonitvat/components/*": ["app/shared/components/*"],
+      "@sastrayonitvat/services/*": ["app/shared/services/*"],
+      "@sastrayonitvat/directives/*": ["app/shared/directives/*"],
+      "@sastrayonitvat/interceptors/*": ["app/shared/interceptors/*"],
+      "@sastrayonitvat/pipes/*": ["app/shared/pipes/*"],
+      "@sastrayonitvat/types/*": ["app/shared/types/*"],
+    }
   }
 }

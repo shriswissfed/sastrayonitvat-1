@@ -6,6 +6,7 @@
     "start": "ng serve --host 0.0.0.0 --disable-host-check",
     "build": "ng build --prod",
     "lint": "ng lint",
+    "deploy": "ng build --prod && firebase deploy",
     "hmr": "ng serve --host 0.0.0.0 --disable-host-check --hmr -e=hmr",
     "ngsw-config": "node_modules/.bin/ngsw-config dist src/ngsw-config.json",
     "ngsw-copy": "cp node_modules/@angular/service-worker/ngsw-worker.js dist/",
