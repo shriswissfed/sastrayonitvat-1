@@ -10,6 +10,7 @@ branches:
 before_script:
   - yarn global add firebase-tools
   - yarn global add @angular/cli
+  - cd functions && yarn && cd ..
 
 script:
   - echo "Instantiating Tests..."
@@ -29,3 +30,4 @@ cache:
   yarn: true
   directories:
     - node_modules
+    - functions/node_modules
