@@ -16,7 +16,7 @@ script:
   - echo "Instantiating Tests..."
   - yarn lint
   - yarn build
-  - echo "Launching Deploy to Firebase( sastrayonitvat-dev.firebaseapp.com ) now..."
+  - echo "Launching Deploy to Firebase( VEDHABASE.firebaseapp.com ) now..."
   - test $TRAVIS_BRANCH = "master" && test $TRAVIS_PULL_REQUEST = "false" && firebase deploy --token $FIREBASE_TOKEN --non-interactive
 
 after_success:
