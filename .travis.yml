@@ -18,8 +18,7 @@ script:
   - yarn build
   - test $TRAVIS_BRANCH = "master" 
   - test $TRAVIS_PULL_REQUEST = "false"
-  - echo "Deploy to Firebase(vedhabase.firebaseapp.com)..."
-  - firebase deploy --token $FIREBASE_TOKEN -P staging --non-interactive
+  - yarn deploy-staging
 
 after_success:
 
