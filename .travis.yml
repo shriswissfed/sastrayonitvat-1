@@ -18,7 +18,7 @@ script:
   - yarn build
   - test $TRAVIS_BRANCH = "master" 
   - test $TRAVIS_PULL_REQUEST = "false"
-  - yarn deploy-staging
+  - firebase deploy --non-interactive --token $FIREBASE_TOKEN
 
 after_success:
 
